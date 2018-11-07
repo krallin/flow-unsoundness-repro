@@ -1,6 +1,8 @@
 /* @flow */
-import type { StatementType } from './RichStatement';
+import type { State } from './reducer/editor/state';
 
-export type Statement = {
-  type: StatementType,
+type Foo = mixed;
+
+export interface Statement {
+  makeFoo(State): Foo;
 }

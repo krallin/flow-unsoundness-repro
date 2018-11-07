@@ -13,7 +13,7 @@ export type Action = RestoreEditorAction | DismissEditorAction;
 
 type A<T> = Action & T;
 
-export function dismissTacticalEditor(
+export function dismissEditor(
   editorSelector: EditorSelector,
 ): A<DismissEditorAction> {
   return { editorSelector };
