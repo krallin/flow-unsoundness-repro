@@ -1,5 +1,5 @@
 /* @flow */
-import type { ImplementationState } from './models/ImplementationState';
+import type { ImplementationState } from '../data/models/ImplementationState';
 
 export default class ImplementationStatesIndex {
   static empty(): ImplementationStatesIndex {

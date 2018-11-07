@@ -25,7 +25,7 @@ remove `PreparedImplementation` and the `PreparedImplementation` import in
 
 ```js
 /* @flow */
-export opaque type ImplementationId: string = string;
+export type ImplementationId = string;
 
 export type Implementation = {
   id: ImplementationId,

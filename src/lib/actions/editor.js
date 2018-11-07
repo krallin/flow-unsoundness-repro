@@ -1,12 +1,12 @@
-/* @flow  */
-import type { EditorSelector } from '../reducer/editor/state';
+/* @flow */
+import type { RichImplementation } from '../reducer/data/models/RichImplementation';
 
 type RestoreEditorAction = {
-  editorSelector: EditorSelector,
+  richImplementation: RichImplementation,
 };
 
 type DismissEditorAction = {
-  editorSelector: EditorSelector,
+  richImplementation: RichImplementation,
 };
 
 export type Action = RestoreEditorAction | DismissEditorAction;
@@ -14,7 +14,7 @@ export type Action = RestoreEditorAction | DismissEditorAction;
 type A<T> = Action & T;
 
 export function dismissEditor(
-  editorSelector: EditorSelector,
+  richImplementation: RichImplementation,
 ): A<DismissEditorAction> {
-  return { editorSelector };
+  return { richImplementation };
 }

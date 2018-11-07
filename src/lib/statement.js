@@ -3,6 +3,6 @@ import type { State } from './reducer/editor/state';
 
 type Foo = mixed;
 
-export interface Statement {
-  makeFoo(State): Foo;
+export type Statement = {
+  makeFoo(state: State): Foo;
 }
